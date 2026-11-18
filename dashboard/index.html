@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hospital Readmission Dashboard — 30-Day Readmissions</title>
+<style>
+  body { font-family: -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+         margin: 0; background: #f4f6f8; color: #1a1a1a; }
+  header { background: #14365d; color: #fff; padding: 28px 32px; }
+  header h1 { margin: 0 0 6px; font-size: 26px; }
+  header p { margin: 0; opacity: .85; }
+  main { max-width: 1100px; margin: 0 auto; padding: 24px; }
+  .kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+  .kpi { background: #fff; border-radius: 10px; padding: 18px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+  .kpi .num { font-size: 30px; font-weight: 700; color: #14365d; }
+  .kpi .lbl { font-size: 13px; color: #555; margin-top: 4px; }
+  .card { background: #fff; border-radius: 10px; padding: 20px 24px;
+          box-shadow: 0 1px 4px rgba(0,0,0,.08); margin-bottom: 24px; }
+  .card h2 { margin-top: 0; font-size: 19px; color: #14365d; }
+  .card img { max-width: 100%; height: auto; display: block; margin: 0 auto; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e3e3e3; }
+  th { background: #eef2f6; }
+  td:last-child, th:last-child { text-align: right; }
+  .note { font-size: 13px; color: #555; }
+  footer { max-width: 1100px; margin: 0 auto; padding: 0 24px 32px; font-size: 13px; color: #555; }
+  @media (max-width: 700px) { .kpis { grid-template-columns: 1fr 1fr; } .grid2 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Hospital Readmission Dashboard</h1>
+  <p>Which patients come back within 30 days, and where should a hospital focus? &nbsp;|&nbsp;
+     UCI Diabetes 130-US Hospitals (1999–2008) &nbsp;|&nbsp; Analysis cohort: one encounter per patient</p>
+</header>
+<main>
+  <section class="kpis">
+    <div class="kpi"><div class="num">69,985</div><div class="lbl">Patients in analysis cohort</div></div>
+    <div class="kpi"><div class="num">8.98%</div><div class="lbl">Readmitted within 30 days</div></div>
+    <div class="kpi"><div class="num">6,284</div><div class="lbl">30-day readmissions</div></div>
+    <div class="kpi"><div class="num">$95,516,800</div><div class="lbl">Illustrative cost of those readmissions*</div></div>
+  </section>
+
+  <section class="card">
+    <h2>High-risk patient profiles</h2>
+    <p>Segments to act on first. Rates are associations in this dataset, not predictions for an individual patient.</p>
+    <table>
+      <thead><tr><th>Profile</th><th>Patients</th><th>Rate</th><th>Suggested action</th></tr></thead>
+      <tbody><tr><td>3+ prior inpatient visits, discharged to SNF / rehab</td><td>166</td><td>31.33%</td><td>Daily check-in with the receiving facility for the first week</td></tr>
+<tr><td>3+ prior inpatient visits (any discharge)</td><td>896</td><td>26.45%</td><td>Same-week follow-up call and post-discharge review — first priority</td></tr>
+<tr><td>3+ prior inpatient visits, discharged home</td><td>511</td><td>23.29%</td><td>Home-health visit within 48 hours; confirm medication list</td></tr>
+<tr><td>2 prior inpatient visits</td><td>1,501</td><td>18.52%</td><td>Follow-up call within one week of discharge</td></tr>
+<tr><td>Stay of 8+ days</td><td>9,768</td><td>11.79%</td><td>Medication review before discharge; confirm follow-up appointment</td></tr>
+<tr><td>Age 80–90, emergency admission</td><td>6,224*</td><td>10.91%</td><td>Discharge planning with family / caregiver involved</td></tr>
+</tbody>
+    </table>
+    <p class="note">* Age 80–90 emergency-admission count is the 80–90 group overall in the source table; the rate shown is for emergency admissions within that group.</p>
+  </section>
+
+  <section class="card">
+    <h2>Prior inpatient visits drive readmission</h2>
+    <img src="../images/readmission_by_prior_inpatient.png" alt="Readmission rate by prior inpatient visits">
+    <p>Patients with 3+ inpatient visits in the previous year were readmitted at <strong>26.45%</strong>,
+       vs <strong>8.13%</strong> with none. Adjusted odds ratio 3.82 (95% CI 3.27–4.45).</p>
+  </section>
+
+  <div class="grid2">
+    <section class="card">
+      <h2>Readmission by discharge destination</h2>
+      <img src="../images/readmission_by_discharge.png" alt="Readmission rate by discharge destination">
+    </section>
+    <section class="card">
+      <h2>Readmission by age group</h2>
+      <img src="../images/readmission_by_age.png" alt="Readmission rate by age group">
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Adjusted odds ratios (logistic regression)</h2>
+    <img src="../images/odds_ratios.png" alt="Forest plot of adjusted odds ratios">
+    <p>All factors in one model, so each odds ratio is adjusted for the others. The model explains
+       only a small share of readmission risk (McFadden pseudo-R² = 0.035): clinical severity,
+       social factors, and post-discharge care are not in this dataset.</p>
+  </section>
+
+  <div class="grid2">
+    <section class="card"><h2>Rate by prior inpatient visits</h2><table><thead><tr><th>Segment</th><th>Patients</th><th>Readmitted</th><th>Rate</th></tr></thead><tbody><tr><td>0</td><td>61,790</td><td>5,022</td><td>8.13%</td></tr>
+<tr><td>1</td><td>5,798</td><td>747</td><td>12.88%</td></tr>
+<tr><td>2</td><td>1,501</td><td>278</td><td>18.52%</td></tr>
+<tr><td>3+</td><td>896</td><td>237</td><td>26.45%</td></tr>
+</tbody></table></section>
+    <section class="card"><h2>Rate by discharge destination</h2><table><thead><tr><th>Segment</th><th>Patients</th><th>Readmitted</th><th>Rate</th></tr></thead><tbody><tr><td>Other hospital / inpatient facility</td><td>2,463</td><td>402</td><td>16.32%</td></tr>
+<tr><td>SNF / rehab / nursing facility</td><td>11,070</td><td>1,635</td><td>14.77%</td></tr>
+<tr><td>Other/Unknown</td><td>3,359</td><td>331</td><td>9.85%</td></tr>
+<tr><td>Home with home health</td><td>8,364</td><td>798</td><td>9.54%</td></tr>
+<tr><td>Left AMA</td><td>409</td><td>39</td><td>9.54%</td></tr>
+<tr><td>Home</td><td>44,320</td><td>3,079</td><td>6.95%</td></tr>
+</tbody></table></section>
+  </div>
+  <div class="grid2">
+    <section class="card"><h2>Rate by age group</h2><table><thead><tr><th>Segment</th><th>Patients</th><th>Readmitted</th><th>Rate</th></tr></thead><tbody><tr><td>[0-10)</td><td>153</td><td>3</td><td>1.96%</td></tr>
+<tr><td>[10-20)</td><td>534</td><td>26</td><td>4.87%</td></tr>
+<tr><td>[20-30)</td><td>1,121</td><td>83</td><td>7.40%</td></tr>
+<tr><td>[30-40)</td><td>2,692</td><td>188</td><td>6.98%</td></tr>
+<tr><td>[40-50)</td><td>6,828</td><td>506</td><td>7.41%</td></tr>
+<tr><td>[50-60)</td><td>12,351</td><td>880</td><td>7.12%</td></tr>
+<tr><td>[60-70)</td><td>15,688</td><td>1,415</td><td>9.02%</td></tr>
+<tr><td>[70-80)</td><td>17,748</td><td>1,816</td><td>10.23%</td></tr>
+<tr><td>[80-90)</td><td>11,110</td><td>1,199</td><td>10.79%</td></tr>
+<tr><td>[90-100)</td><td>1,760</td><td>168</td><td>9.55%</td></tr>
+</tbody></table></section>
+    <section class="card"><h2>Rate by primary diagnosis</h2><table><thead><tr><th>Segment</th><th>Patients</th><th>Readmitted</th><th>Rate</th></tr></thead><tbody><tr><td>Injury</td><td>4,694</td><td>507</td><td>10.80%</td></tr>
+<tr><td>Circulatory</td><td>21,388</td><td>2,070</td><td>9.68%</td></tr>
+<tr><td>Diabetes</td><td>5,761</td><td>525</td><td>9.11%</td></tr>
+<tr><td>Neoplasms</td><td>2,538</td><td>230</td><td>9.06%</td></tr>
+<tr><td>Genitourinary</td><td>3,441</td><td>309</td><td>8.98%</td></tr>
+<tr><td>Other</td><td>12,110</td><td>1,087</td><td>8.98%</td></tr>
+<tr><td>Musculoskeletal</td><td>4,064</td><td>341</td><td>8.39%</td></tr>
+<tr><td>Digestive</td><td>6,488</td><td>520</td><td>8.01%</td></tr>
+<tr><td>Respiratory</td><td>9,491</td><td>693</td><td>7.30%</td></tr>
+</tbody></table></section>
+  </div>
+</main>
+<footer>
+  <p>* Cost illustration: AHRQ HCUP Statistical Brief #278 (Weiss &amp; Jiang, 2021) reports an average
+  30-day readmission cost of $15,200 (2018 USD). That is a national all-cause average, not a
+  diabetes-specific cost, so dollar figures here are illustrative. See the README for the full
+  method, limitations, and how to reproduce every number on this page.</p>
+  <p>Findings are associations in a 1999–2008 diabetes dataset, not causal claims and not medical advice.</p>
+</footer>
+</body>
+</html>

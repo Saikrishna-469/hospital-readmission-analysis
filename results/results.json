@@ -1,0 +1,1081 @@
+{
+  "cohort_n": 69985,
+  "n_readmitted_30d": 6284,
+  "readmit_rate_pct": 8.98,
+  "by_age_group": [
+    {
+      "age_group": "[0-10)",
+      "n": 153,
+      "n_readmitted": 3,
+      "rate": 0.0196078431372549,
+      "rate_pct": 1.96
+    },
+    {
+      "age_group": "[10-20)",
+      "n": 534,
+      "n_readmitted": 26,
+      "rate": 0.04868913857677903,
+      "rate_pct": 4.87
+    },
+    {
+      "age_group": "[20-30)",
+      "n": 1121,
+      "n_readmitted": 83,
+      "rate": 0.07404103479036575,
+      "rate_pct": 7.4
+    },
+    {
+      "age_group": "[30-40)",
+      "n": 2692,
+      "n_readmitted": 188,
+      "rate": 0.06983655274888559,
+      "rate_pct": 6.98
+    },
+    {
+      "age_group": "[40-50)",
+      "n": 6828,
+      "n_readmitted": 506,
+      "rate": 0.07410661980082016,
+      "rate_pct": 7.41
+    },
+    {
+      "age_group": "[50-60)",
+      "n": 12351,
+      "n_readmitted": 880,
+      "rate": 0.07124929155533966,
+      "rate_pct": 7.12
+    },
+    {
+      "age_group": "[60-70)",
+      "n": 15688,
+      "n_readmitted": 1415,
+      "rate": 0.09019632840387558,
+      "rate_pct": 9.02
+    },
+    {
+      "age_group": "[70-80)",
+      "n": 17748,
+      "n_readmitted": 1816,
+      "rate": 0.10232138832544511,
+      "rate_pct": 10.23
+    },
+    {
+      "age_group": "[80-90)",
+      "n": 11110,
+      "n_readmitted": 1199,
+      "rate": 0.10792079207920792,
+      "rate_pct": 10.79
+    },
+    {
+      "age_group": "[90-100)",
+      "n": 1760,
+      "n_readmitted": 168,
+      "rate": 0.09545454545454546,
+      "rate_pct": 9.55
+    }
+  ],
+  "by_race": [
+    {
+      "race": "AfricanAmerican",
+      "n": 12627,
+      "n_readmitted": 1095,
+      "rate": 0.08671893561416014,
+      "rate_pct": 8.67
+    },
+    {
+      "race": "Asian",
+      "n": 488,
+      "n_readmitted": 41,
+      "rate": 0.08401639344262295,
+      "rate_pct": 8.4
+    },
+    {
+      "race": "Caucasian",
+      "n": 52303,
+      "n_readmitted": 4806,
+      "rate": 0.09188765462784161,
+      "rate_pct": 9.19
+    },
+    {
+      "race": "Hispanic",
+      "n": 1501,
+      "n_readmitted": 122,
+      "rate": 0.08127914723517655,
+      "rate_pct": 8.13
+    },
+    {
+      "race": "Other",
+      "n": 1149,
+      "n_readmitted": 79,
+      "rate": 0.06875543951261967,
+      "rate_pct": 6.88
+    }
+  ],
+  "by_gender": [
+    {
+      "gender": "Female",
+      "n": 37239,
+      "n_readmitted": 3365,
+      "rate": 0.09036225462552701,
+      "rate_pct": 9.04
+    },
+    {
+      "gender": "Male",
+      "n": 32746,
+      "n_readmitted": 2919,
+      "rate": 0.08914065840102608,
+      "rate_pct": 8.91
+    }
+  ],
+  "by_admission_type": [
+    {
+      "admission_type": "Elective",
+      "n": 13786,
+      "n_readmitted": 1142,
+      "rate": 0.08283766139561874,
+      "rate_pct": 8.28
+    },
+    {
+      "admission_type": "Emergency",
+      "n": 35477,
+      "n_readmitted": 3258,
+      "rate": 0.0918341460664656,
+      "rate_pct": 9.18
+    },
+    {
+      "admission_type": "Other/Unknown",
+      "n": 7920,
+      "n_readmitted": 736,
+      "rate": 0.09292929292929293,
+      "rate_pct": 9.29
+    },
+    {
+      "admission_type": "Urgent",
+      "n": 12802,
+      "n_readmitted": 1148,
+      "rate": 0.08967348851741916,
+      "rate_pct": 8.97
+    }
+  ],
+  "by_discharge_group": [
+    {
+      "discharge_group": "Home",
+      "n": 44320,
+      "n_readmitted": 3079,
+      "rate": 0.06947202166064982,
+      "rate_pct": 6.95
+    },
+    {
+      "discharge_group": "Home with home health",
+      "n": 8364,
+      "n_readmitted": 798,
+      "rate": 0.09540889526542325,
+      "rate_pct": 9.54
+    },
+    {
+      "discharge_group": "Left AMA",
+      "n": 409,
+      "n_readmitted": 39,
+      "rate": 0.09535452322738386,
+      "rate_pct": 9.54
+    },
+    {
+      "discharge_group": "Other hospital / inpatient facility",
+      "n": 2463,
+      "n_readmitted": 402,
+      "rate": 0.16321559074299635,
+      "rate_pct": 16.32
+    },
+    {
+      "discharge_group": "Other/Unknown",
+      "n": 3359,
+      "n_readmitted": 331,
+      "rate": 0.0985412325096755,
+      "rate_pct": 9.85
+    },
+    {
+      "discharge_group": "SNF / rehab / nursing facility",
+      "n": 11070,
+      "n_readmitted": 1635,
+      "rate": 0.14769647696476965,
+      "rate_pct": 14.77
+    }
+  ],
+  "by_diag_1_category": [
+    {
+      "diag_1_category": "Circulatory",
+      "n": 21388,
+      "n_readmitted": 2070,
+      "rate": 0.09678324293996633,
+      "rate_pct": 9.68
+    },
+    {
+      "diag_1_category": "Diabetes",
+      "n": 5761,
+      "n_readmitted": 525,
+      "rate": 0.0911300121506683,
+      "rate_pct": 9.11
+    },
+    {
+      "diag_1_category": "Digestive",
+      "n": 6488,
+      "n_readmitted": 520,
+      "rate": 0.08014796547472257,
+      "rate_pct": 8.01
+    },
+    {
+      "diag_1_category": "Genitourinary",
+      "n": 3441,
+      "n_readmitted": 309,
+      "rate": 0.08979947689625109,
+      "rate_pct": 8.98
+    },
+    {
+      "diag_1_category": "Injury",
+      "n": 4694,
+      "n_readmitted": 507,
+      "rate": 0.108010225820196,
+      "rate_pct": 10.8
+    },
+    {
+      "diag_1_category": "Missing",
+      "n": 10,
+      "n_readmitted": 2,
+      "rate": 0.2,
+      "rate_pct": 20.0
+    },
+    {
+      "diag_1_category": "Musculoskeletal",
+      "n": 4064,
+      "n_readmitted": 341,
+      "rate": 0.08390748031496063,
+      "rate_pct": 8.39
+    },
+    {
+      "diag_1_category": "Neoplasms",
+      "n": 2538,
+      "n_readmitted": 230,
+      "rate": 0.09062253743104808,
+      "rate_pct": 9.06
+    },
+    {
+      "diag_1_category": "Other",
+      "n": 12110,
+      "n_readmitted": 1087,
+      "rate": 0.08976052848885219,
+      "rate_pct": 8.98
+    },
+    {
+      "diag_1_category": "Respiratory",
+      "n": 9491,
+      "n_readmitted": 693,
+      "rate": 0.07301654198714572,
+      "rate_pct": 7.3
+    }
+  ],
+  "by_prior_inpatient_group": [
+    {
+      "prior_inpatient_group": "0",
+      "n": 61790,
+      "n_readmitted": 5022,
+      "rate": 0.08127528726331122,
+      "rate_pct": 8.13
+    },
+    {
+      "prior_inpatient_group": "1",
+      "n": 5798,
+      "n_readmitted": 747,
+      "rate": 0.12883753018282165,
+      "rate_pct": 12.88
+    },
+    {
+      "prior_inpatient_group": "2",
+      "n": 1501,
+      "n_readmitted": 278,
+      "rate": 0.18520986009327114,
+      "rate_pct": 18.52
+    },
+    {
+      "prior_inpatient_group": "3+",
+      "n": 896,
+      "n_readmitted": 237,
+      "rate": 0.26450892857142855,
+      "rate_pct": 26.45
+    }
+  ],
+  "by_los_group": [
+    {
+      "los_group": "1-2 days",
+      "n": 22650,
+      "n_readmitted": 1621,
+      "rate": 0.07156732891832229,
+      "rate_pct": 7.16
+    },
+    {
+      "los_group": "3-4 days",
+      "n": 21916,
+      "n_readmitted": 1861,
+      "rate": 0.0849151304982661,
+      "rate_pct": 8.49
+    },
+    {
+      "los_group": "5-7 days",
+      "n": 15651,
+      "n_readmitted": 1650,
+      "rate": 0.10542457350967989,
+      "rate_pct": 10.54
+    },
+    {
+      "los_group": "8+ days",
+      "n": 9768,
+      "n_readmitted": 1152,
+      "rate": 0.11793611793611794,
+      "rate_pct": 11.79
+    }
+  ],
+  "by_meds_group": [
+    {
+      "meds_group": "1-10",
+      "n": 19497,
+      "n_readmitted": 1423,
+      "rate": 0.07298558752628609,
+      "rate_pct": 7.3
+    },
+    {
+      "meds_group": "11-20",
+      "n": 35045,
+      "n_readmitted": 3245,
+      "rate": 0.09259523469824511,
+      "rate_pct": 9.26
+    },
+    {
+      "meds_group": "21+",
+      "n": 15443,
+      "n_readmitted": 1616,
+      "rate": 0.10464288026937771,
+      "rate_pct": 10.46
+    }
+  ],
+  "chi_square": {
+    "age_group": {
+      "chi2": 188.78,
+      "dof": 9,
+      "p": 7.393996918184449e-36
+    },
+    "race": {
+      "chi2": 11.79,
+      "dof": 4,
+      "p": 0.018950890682547256
+    },
+    "gender": {
+      "chi2": 0.3,
+      "dof": 1,
+      "p": 0.5817710826161817
+    },
+    "admission_type": {
+      "chi2": 10.92,
+      "dof": 3,
+      "p": 0.01214299410454295
+    },
+    "discharge_group": {
+      "chi2": 847.06,
+      "dof": 5,
+      "p": 7.626164447816949e-181
+    },
+    "diag_1_category": {
+      "chi2": 75.27,
+      "dof": 9,
+      "p": 1.3956194927446997e-12
+    },
+    "prior_inpatient_group": {
+      "chi2": 664.87,
+      "dof": 3,
+      "p": 8.704658661885244e-144
+    },
+    "los_group": {
+      "chi2": 239.89,
+      "dof": 3,
+      "p": 1.0035673835442109e-51
+    },
+    "meds_group": {
+      "chi2": 112.43,
+      "dof": 2,
+      "p": 3.86443986968211e-25
+    },
+    "a1c_tested": {
+      "chi2": 6.38,
+      "dof": 1,
+      "p": 0.011541473655087535
+    },
+    "med_change": {
+      "chi2": 14.76,
+      "dof": 1,
+      "p": 0.00012220850616586436
+    },
+    "diab_med": {
+      "chi2": 53.85,
+      "dof": 1,
+      "p": 2.1626351962056068e-13
+    },
+    "A1Cresult": {
+      "chi2": 7.33,
+      "dof": 3,
+      "p": 0.062087655849378365
+    }
+  },
+  "by_a1c_tested": [
+    {
+      "a1c_tested": "Not tested",
+      "n": 57139,
+      "n_readmitted": 5205,
+      "rate": 0.09109364882129543,
+      "rate_pct": 9.11
+    },
+    {
+      "a1c_tested": "Tested",
+      "n": 12846,
+      "n_readmitted": 1079,
+      "rate": 0.08399501790440604,
+      "rate_pct": 8.4
+    }
+  ],
+  "by_med_change": [
+    {
+      "med_change": "Changed",
+      "n": 31495,
+      "n_readmitted": 2973,
+      "rate": 0.09439593586283537,
+      "rate_pct": 9.44
+    },
+    {
+      "med_change": "No change",
+      "n": 38490,
+      "n_readmitted": 3311,
+      "rate": 0.08602234346583529,
+      "rate_pct": 8.6
+    }
+  ],
+  "by_diab_med": [
+    {
+      "diab_med": "No",
+      "n": 16683,
+      "n_readmitted": 1261,
+      "rate": 0.07558592579272314,
+      "rate_pct": 7.56
+    },
+    {
+      "diab_med": "Yes",
+      "n": 53302,
+      "n_readmitted": 5023,
+      "rate": 0.0942366140107313,
+      "rate_pct": 9.42
+    }
+  ],
+  "by_A1Cresult": [
+    {
+      "A1Cresult": ">7",
+      "n": 2866,
+      "n_readmitted": 247,
+      "rate": 0.08618283321702722,
+      "rate_pct": 8.62
+    },
+    {
+      "A1Cresult": ">8",
+      "n": 6239,
+      "n_readmitted": 509,
+      "rate": 0.08158358711331944,
+      "rate_pct": 8.16
+    },
+    {
+      "A1Cresult": "None",
+      "n": 57139,
+      "n_readmitted": 5205,
+      "rate": 0.09109364882129543,
+      "rate_pct": 9.11
+    },
+    {
+      "A1Cresult": "Norm",
+      "n": 3741,
+      "n_readmitted": 323,
+      "rate": 0.0863405506549051,
+      "rate_pct": 8.63
+    }
+  ],
+  "mann_whitney": {
+    "time_in_hospital": {
+      "U": 224027171.0,
+      "p": 4.784800174823684e-56,
+      "median_readmitted": 4.0,
+      "median_not": 3.0,
+      "mean_readmitted": 4.79,
+      "mean_not": 4.22
+    },
+    "num_medications": {
+      "U": 217288776.0,
+      "p": 2.9423786628172946e-29,
+      "median_readmitted": 15.0,
+      "median_not": 14.0,
+      "mean_readmitted": 16.62,
+      "mean_not": 15.57
+    },
+    "num_lab_procedures": {
+      "U": 213252056.0,
+      "p": 9.724625564773909e-18,
+      "median_readmitted": 46.0,
+      "median_not": 44.0,
+      "mean_readmitted": 44.91,
+      "mean_not": 42.68
+    },
+    "number_inpatient": {
+      "U": 219220662.5,
+      "p": 6.716283456561938e-111,
+      "median_readmitted": 0.0,
+      "median_not": 0.0,
+      "mean_readmitted": 0.37,
+      "mean_not": 0.16
+    },
+    "number_emergency": {
+      "U": 205653561.0,
+      "p": 1.2666513112878615e-15,
+      "median_readmitted": 0.0,
+      "median_not": 0.0,
+      "mean_readmitted": 0.15,
+      "mean_not": 0.1
+    },
+    "number_diagnoses": {
+      "U": 216789548.5,
+      "p": 3.3049951697830106e-30,
+      "median_readmitted": 8.0,
+      "median_not": 8.0,
+      "mean_readmitted": 7.51,
+      "mean_not": 7.2
+    },
+    "num_procedures": {
+      "U": 201491048.5,
+      "p": 0.35517480449456107,
+      "median_readmitted": 1.0,
+      "median_not": 1.0,
+      "mean_readmitted": 1.42,
+      "mean_not": 1.43
+    },
+    "number_outpatient": {
+      "U": 203954469.5,
+      "p": 2.0463007255800304e-05,
+      "median_readmitted": 0.0,
+      "median_not": 0.0,
+      "mean_readmitted": 0.31,
+      "mean_not": 0.28
+    }
+  },
+  "discharge_x_prior_inpatient": [
+    {
+      "discharge_group": "Home",
+      "prior_inpatient_group": "0",
+      "count": 39524,
+      "mean": 0.06213945956886955,
+      "rate_pct": 6.21
+    },
+    {
+      "discharge_group": "Home",
+      "prior_inpatient_group": "1",
+      "count": 3422,
+      "mean": 0.108708357685564,
+      "rate_pct": 10.87
+    },
+    {
+      "discharge_group": "Home",
+      "prior_inpatient_group": "2",
+      "count": 863,
+      "mean": 0.15295480880648898,
+      "rate_pct": 15.3
+    },
+    {
+      "discharge_group": "Home",
+      "prior_inpatient_group": "3+",
+      "count": 511,
+      "mean": 0.2328767123287671,
+      "rate_pct": 23.29
+    },
+    {
+      "discharge_group": "Home with home health",
+      "prior_inpatient_group": "0",
+      "count": 6998,
+      "mean": 0.08731066018862532,
+      "rate_pct": 8.73
+    },
+    {
+      "discharge_group": "Home with home health",
+      "prior_inpatient_group": "1",
+      "count": 955,
+      "mean": 0.10261780104712041,
+      "rate_pct": 10.26
+    },
+    {
+      "discharge_group": "Home with home health",
+      "prior_inpatient_group": "2",
+      "count": 257,
+      "mean": 0.17898832684824903,
+      "rate_pct": 17.9
+    },
+    {
+      "discharge_group": "Home with home health",
+      "prior_inpatient_group": "3+",
+      "count": 154,
+      "mean": 0.2792207792207792,
+      "rate_pct": 27.92
+    },
+    {
+      "discharge_group": "Left AMA",
+      "prior_inpatient_group": "0",
+      "count": 358,
+      "mean": 0.08659217877094973,
+      "rate_pct": 8.66
+    },
+    {
+      "discharge_group": "Left AMA",
+      "prior_inpatient_group": "1",
+      "count": 29,
+      "mean": 0.10344827586206896,
+      "rate_pct": 10.34
+    },
+    {
+      "discharge_group": "Left AMA",
+      "prior_inpatient_group": "2",
+      "count": 13,
+      "mean": 0.15384615384615385,
+      "rate_pct": 15.38
+    },
+    {
+      "discharge_group": "Left AMA",
+      "prior_inpatient_group": "3+",
+      "count": 9,
+      "mean": 0.3333333333333333,
+      "rate_pct": 33.33
+    },
+    {
+      "discharge_group": "Other hospital / inpatient facility",
+      "prior_inpatient_group": "0",
+      "count": 2115,
+      "mean": 0.1380614657210402,
+      "rate_pct": 13.81
+    },
+    {
+      "discharge_group": "Other hospital / inpatient facility",
+      "prior_inpatient_group": "1",
+      "count": 236,
+      "mean": 0.3220338983050847,
+      "rate_pct": 32.2
+    },
+    {
+      "discharge_group": "Other hospital / inpatient facility",
+      "prior_inpatient_group": "2",
+      "count": 63,
+      "mean": 0.2698412698412698,
+      "rate_pct": 26.98
+    },
+    {
+      "discharge_group": "Other hospital / inpatient facility",
+      "prior_inpatient_group": "3+",
+      "count": 49,
+      "mean": 0.3469387755102041,
+      "rate_pct": 34.69
+    },
+    {
+      "discharge_group": "Other/Unknown",
+      "prior_inpatient_group": "0",
+      "count": 3206,
+      "mean": 0.09388646288209607,
+      "rate_pct": 9.39
+    },
+    {
+      "discharge_group": "Other/Unknown",
+      "prior_inpatient_group": "1",
+      "count": 127,
+      "mean": 0.15748031496062992,
+      "rate_pct": 15.75
+    },
+    {
+      "discharge_group": "Other/Unknown",
+      "prior_inpatient_group": "2",
+      "count": 19,
+      "mean": 0.3684210526315789,
+      "rate_pct": 36.84
+    },
+    {
+      "discharge_group": "Other/Unknown",
+      "prior_inpatient_group": "3+",
+      "count": 7,
+      "mean": 0.42857142857142855,
+      "rate_pct": 42.86
+    },
+    {
+      "discharge_group": "SNF / rehab / nursing facility",
+      "prior_inpatient_group": "0",
+      "count": 9589,
+      "mean": 0.1388048805923454,
+      "rate_pct": 13.88
+    },
+    {
+      "discharge_group": "SNF / rehab / nursing facility",
+      "prior_inpatient_group": "1",
+      "count": 1029,
+      "mean": 0.1729834791059281,
+      "rate_pct": 17.3
+    },
+    {
+      "discharge_group": "SNF / rehab / nursing facility",
+      "prior_inpatient_group": "2",
+      "count": 286,
+      "mean": 0.25874125874125875,
+      "rate_pct": 25.87
+    },
+    {
+      "discharge_group": "SNF / rehab / nursing facility",
+      "prior_inpatient_group": "3+",
+      "count": 166,
+      "mean": 0.3132530120481928,
+      "rate_pct": 31.33
+    }
+  ],
+  "prior_inpatient_3plus": {
+    "n": 896,
+    "n_readmitted": 237,
+    "rate_pct": 26.45
+  },
+  "prior_inpatient_3plus_and_snf": {
+    "n": 166,
+    "n_readmitted": 52,
+    "rate_pct": 31.33
+  },
+  "prior_inpatient_3plus_and_home": {
+    "n": 511,
+    "n_readmitted": 119,
+    "rate_pct": 23.29
+  },
+  "age_80plus_emergency": {
+    "n": 7359,
+    "n_readmitted": 781,
+    "rate_pct": 10.61
+  },
+  "los_8plus": {
+    "n": 9768,
+    "n_readmitted": 1152,
+    "rate_pct": 11.79
+  },
+  "logistic_regression": {
+    "n_obs": 69985,
+    "pseudo_r2": 0.035,
+    "odds_ratios": [
+      {
+        "variable": "prior_inpatient_group_3+",
+        "odds_ratio": 3.8147095571671708,
+        "ci_low": 3.2687357200377316,
+        "ci_high": 4.451876888161083,
+        "p": 9.923784741470382e-65
+      },
+      {
+        "variable": "discharge_group_Other hospital / inpatient facility",
+        "odds_ratio": 2.4229997694025713,
+        "ci_low": 2.1586556383161346,
+        "ci_high": 2.719714890284468,
+        "p": 5.827870096257928e-51
+      },
+      {
+        "variable": "prior_inpatient_group_2",
+        "odds_ratio": 2.395696529187333,
+        "ci_low": 2.0913746805264877,
+        "ci_high": 2.7443011113223346,
+        "p": 1.9910341351903007e-36
+      },
+      {
+        "variable": "discharge_group_SNF / rehab / nursing facility",
+        "odds_ratio": 2.082119845362046,
+        "ci_low": 1.9316731242155007,
+        "ci_high": 2.2442839816447258,
+        "p": 7.188709092079723e-82
+      },
+      {
+        "variable": "diag_1_category_Missing",
+        "odds_ratio": 1.9033984310239513,
+        "ci_low": 0.3733030656275719,
+        "ci_high": 9.705051795205117,
+        "p": 0.4386902538477878
+      },
+      {
+        "variable": "prior_inpatient_group_1",
+        "odds_ratio": 1.58428692760379,
+        "ci_low": 1.4572988154335753,
+        "ci_high": 1.7223407048673764,
+        "p": 3.669572675659201e-27
+      },
+      {
+        "variable": "discharge_group_Other/Unknown",
+        "odds_ratio": 1.5220725864512983,
+        "ci_low": 1.3474694310114272,
+        "ci_high": 1.719300568241906,
+        "p": 1.4068839126297081e-11
+      },
+      {
+        "variable": "discharge_group_Left AMA",
+        "odds_ratio": 1.4796429844336498,
+        "ci_low": 1.0575325509587048,
+        "ci_high": 2.0702373268784697,
+        "p": 0.022230923342134834
+      },
+      {
+        "variable": "age_group_[70-80)",
+        "odds_ratio": 1.2823758391063613,
+        "ci_low": 1.1759461428092253,
+        "ci_high": 1.3984380175738462,
+        "p": 1.8410682534987664e-08
+      },
+      {
+        "variable": "diab_med_Yes",
+        "odds_ratio": 1.2461539571451925,
+        "ci_low": 1.1564706377473344,
+        "ci_high": 1.3427921420758973,
+        "p": 7.705324451735774e-09
+      },
+      {
+        "variable": "discharge_group_Home with home health",
+        "odds_ratio": 1.2365782967950116,
+        "ci_low": 1.1346406695368618,
+        "ci_high": 1.347674136102147,
+        "p": 1.313723989253248e-06
+      },
+      {
+        "variable": "age_group_[60-70)",
+        "odds_ratio": 1.2207119375050974,
+        "ci_low": 1.1168880958626175,
+        "ci_high": 1.3341870505089017,
+        "p": 1.0950860606668396e-05
+      },
+      {
+        "variable": "age_group_[80-90)",
+        "odds_ratio": 1.2133049067790143,
+        "ci_low": 1.1009713838676456,
+        "ci_high": 1.337099963163987,
+        "p": 9.5987748380472e-05
+      },
+      {
+        "variable": "los_group_8+ days",
+        "odds_ratio": 1.185169545115043,
+        "ci_low": 1.0795753229677691,
+        "ci_high": 1.3010920320101957,
+        "p": 0.0003595523700382361
+      },
+      {
+        "variable": "los_group_5-7 days",
+        "odds_ratio": 1.1671313487164634,
+        "ci_low": 1.077758542538262,
+        "ci_high": 1.2639153682313318,
+        "p": 0.00014337075720155816
+      },
+      {
+        "variable": "age_group_[20-30)",
+        "odds_ratio": 1.1576091980335994,
+        "ci_low": 0.9111369661205859,
+        "ci_high": 1.4707547879191647,
+        "p": 0.23086773314741205
+      },
+      {
+        "variable": "meds_group_21+",
+        "odds_ratio": 1.1303166073911872,
+        "ci_low": 1.0338461088102733,
+        "ci_high": 1.2357889845081238,
+        "p": 0.007118516635019605
+      },
+      {
+        "variable": "diag_1_category_Diabetes",
+        "odds_ratio": 1.1203274269416672,
+        "ci_low": 0.9999572973142984,
+        "ci_high": 1.2551871434198185,
+        "p": 0.05008613547801732
+      },
+      {
+        "variable": "meds_group_11-20",
+        "odds_ratio": 1.1039276179176556,
+        "ci_low": 1.0296790319340494,
+        "ci_high": 1.18353015629768,
+        "p": 0.005381686701613678
+      },
+      {
+        "variable": "diag_1_category_Circulatory",
+        "odds_ratio": 1.1034525050145303,
+        "ci_low": 1.0181034020468014,
+        "ci_high": 1.1959565485931554,
+        "p": 0.016539894852070164
+      },
+      {
+        "variable": "age_group_[40-50)",
+        "odds_ratio": 1.0975454622870469,
+        "ci_low": 0.9781668188683058,
+        "ci_high": 1.2314934615964188,
+        "p": 0.1131414576846828
+      },
+      {
+        "variable": "diag_1_category_Neoplasms",
+        "odds_ratio": 1.0961536703871315,
+        "ci_low": 0.9402713604538276,
+        "ci_high": 1.2778788333223756,
+        "p": 0.24077532510276178
+      },
+      {
+        "variable": "admission_type_Emergency",
+        "odds_ratio": 1.083243086033702,
+        "ci_low": 1.0031725382199832,
+        "ci_high": 1.1697046507292876,
+        "p": 0.04126984542941948
+      },
+      {
+        "variable": "age_group_[30-40)",
+        "odds_ratio": 1.0780423469014535,
+        "ci_low": 0.9127007136732539,
+        "ci_high": 1.2733366856211878,
+        "p": 0.376358377167165
+      },
+      {
+        "variable": "admission_type_Urgent",
+        "odds_ratio": 1.0691387039284603,
+        "ci_low": 0.9771903013552449,
+        "ci_high": 1.1697389614413338,
+        "p": 0.14509729138606842
+      },
+      {
+        "variable": "los_group_3-4 days",
+        "odds_ratio": 1.033436912723819,
+        "ci_low": 0.9606934214141466,
+        "ci_high": 1.1116885249490394,
+        "p": 0.377138882779098
+      },
+      {
+        "variable": "diag_1_category_Injury",
+        "odds_ratio": 1.0316840766741517,
+        "ci_low": 0.9196952823130172,
+        "ci_high": 1.1573094420862096,
+        "p": 0.5946867865036105
+      },
+      {
+        "variable": "race_AfricanAmerican",
+        "odds_ratio": 1.0292918430297748,
+        "ci_low": 0.9582141539674621,
+        "ci_high": 1.1056418794703027,
+        "p": 0.4290567941598963
+      },
+      {
+        "variable": "admission_type_Other/Unknown",
+        "odds_ratio": 1.0193480084457833,
+        "ci_low": 0.9216156989385677,
+        "ci_high": 1.127444295403269,
+        "p": 0.7094107616192209
+      },
+      {
+        "variable": "diag_1_category_Genitourinary",
+        "odds_ratio": 1.0181464991855897,
+        "ci_low": 0.8897000219611848,
+        "ci_high": 1.1651368643543734,
+        "p": 0.7938034816290902
+      },
+      {
+        "variable": "race_Asian",
+        "odds_ratio": 0.9971340961003887,
+        "ci_low": 0.7201409608358679,
+        "ci_high": 1.380669146290307,
+        "p": 0.98620941875964
+      },
+      {
+        "variable": "diag_1_category_Digestive",
+        "odds_ratio": 0.9940598003132668,
+        "ci_low": 0.8888201852353962,
+        "ci_high": 1.111760177157934,
+        "p": 0.916889633294331
+      },
+      {
+        "variable": "age_group_[90-100)",
+        "odds_ratio": 0.989261275150313,
+        "ci_low": 0.8260274832132292,
+        "ci_high": 1.1847521909381793,
+        "p": 0.9065846155148282
+      },
+      {
+        "variable": "med_change_Changed",
+        "odds_ratio": 0.9741671317450838,
+        "ci_low": 0.9163339046045209,
+        "ci_high": 1.0356504280849692,
+        "p": 0.4019423408385473
+      },
+      {
+        "variable": "race_Hispanic",
+        "odds_ratio": 0.9717292516520084,
+        "ci_low": 0.8024394044556517,
+        "ci_high": 1.1767340104100759,
+        "p": 0.7690364355743518
+      },
+      {
+        "variable": "gender_Female",
+        "odds_ratio": 0.9707983488393784,
+        "ci_low": 0.9201833452698881,
+        "ci_high": 1.0241974482083727,
+        "p": 0.2780105513686354
+      },
+      {
+        "variable": "a1c_tested_Tested",
+        "odds_ratio": 0.9427151041549804,
+        "ci_low": 0.8777881841807958,
+        "ci_high": 1.0124444411738511,
+        "p": 0.10517424043566478
+      },
+      {
+        "variable": "diag_1_category_Musculoskeletal",
+        "odds_ratio": 0.8714220503879584,
+        "ci_low": 0.7604165661911696,
+        "ci_high": 0.9986320967545118,
+        "p": 0.04774249125614634
+      },
+      {
+        "variable": "diag_1_category_Respiratory",
+        "odds_ratio": 0.8328632218797704,
+        "ci_low": 0.7518690080745197,
+        "ci_high": 0.9225824430991855,
+        "p": 0.0004589168988487366
+      },
+      {
+        "variable": "race_Missing",
+        "odds_ratio": 0.8136184242078701,
+        "ci_low": 0.6822683137337006,
+        "ci_high": 0.9702560222793469,
+        "p": 0.021670572012012862
+      },
+      {
+        "variable": "race_Other",
+        "odds_ratio": 0.8044770246021691,
+        "ci_low": 0.6374194494665483,
+        "ci_high": 1.015317752940206,
+        "p": 0.06695728194413872
+      },
+      {
+        "variable": "age_group_[10-20)",
+        "odds_ratio": 0.7605415346527055,
+        "ci_low": 0.5056569265576701,
+        "ci_high": 1.1439048800727207,
+        "p": 0.18872102406842195
+      },
+      {
+        "variable": "age_group_[0-10)",
+        "odds_ratio": 0.31864782804809694,
+        "ci_low": 0.10094578018651487,
+        "ci_high": 1.0058512414502452,
+        "p": 0.05117416677824293
+      }
+    ]
+  },
+  "cost": {
+    "source": "AHRQ HCUP Statistical Brief #278 (Weiss & Jiang, 2021): average 30-day readmission cost $15,200 (2018 USD)",
+    "cost_per_readmission_usd": 15200,
+    "cohort_readmissions_cost_usd": 95516800,
+    "high_risk_3plus_readmissions": 237,
+    "high_risk_3plus_cost_usd": 3602400,
+    "high_risk_20pct_reduction_avoided": 47,
+    "high_risk_20pct_reduction_savings_usd": 714400
+  }
+}
